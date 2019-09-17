@@ -92,7 +92,7 @@
         }
         //取商品价格，单位为“分”
         $("#itemAddForm [name=price]").val(eval($("#itemAddForm [name=priceView]").val()) * 100);
-        //同步文本框中的商品描述
+        //同步文本框中的商品描述，也就是将富文本框中的信息同步到name=desc的标签中
         itemAddEditor.sync();
         //取商品的规格
         /*

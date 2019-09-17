@@ -18,7 +18,7 @@
     </thead>
 </table>
 <div id="itemEditWindow" class="easyui-window" title="编辑商品"
-     data-options="modal:true,closed:true,iconCls:'icon-save',href:'/rest/page/item-edit'"
+     data-options="modal:true,closed:true,iconCls:'icon-save',href:'/item-edit'"
      style="width:80%;height:80%;padding:10px;">
 </div>
 <script>
@@ -55,7 +55,7 @@
 
             $("#itemEditWindow").window({
                 onLoad: function () {
-                    //回显数据
+                    // 回显数据
                     var data = $("#itemList").datagrid("getSelections")[0];
                     data.priceView = TAOTAO.formatPrice(data.price);
                     $("#itemeEditForm").form("load", data);
@@ -68,14 +68,14 @@
                         }
                     });
 
-                    //加载商品规格
+                    // 加载商品规格
                     $.getJSON('/rest/item/param/item/query/' + data.id, function (_data) {
                         if (_data && _data.status == 200 && _data.data && _data.data.paramData) {
                             $("#itemeEditForm .params").show();
                             $("#itemeEditForm [name=itemParams]").val(_data.data.paramData);
                             $("#itemeEditForm [name=itemParamId]").val(_data.data.id);
 
-                            //回显商品规格
+                            // 回显商品规格
                             var paramData = JSON.parse(_data.data.paramData);
 
                             var html = "<ul>";
@@ -118,7 +118,7 @@
             $.messager.confirm('确认', '确定删除ID为 ' + ids + ' 的商品吗？', function (r) {
                 if (r) {
                     var params = {"ids": ids};
-                    $.post("/rest/item/delete", params, function (data) {
+                    $.post("/item/delete", params, function (data) {
                         if (data.status == 200) {
                             $.messager.alert('提示', '删除商品成功!', undefined, function () {
                                 $("#itemList").datagrid("reload");

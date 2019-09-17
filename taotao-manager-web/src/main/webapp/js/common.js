@@ -111,11 +111,13 @@ var TT = TAOTAO = {
                         closed: true,
                         iconCls: 'icon-save',
                         title: '选择类目',
+                        // 只要窗口一打开就执行此方法
                         onOpen: function () {
                             var _win = this;
                             $("ul", _win).tree({
                                 url: '/item/cat/list',
                                 animate: true,
+                                // 为每一个叶子节点添加点击事件
                                 onClick: function (node) {
                                     if ($(this).tree("isLeaf", node.target)) {
                                         // 填写到cid中
@@ -133,7 +135,7 @@ var TT = TAOTAO = {
                         onClose: function () {
                             $(this).window("destroy");
                         }
-                    }).window('open');
+                    }).window('open');  // 自动打开窗口
             });
         });
     },
