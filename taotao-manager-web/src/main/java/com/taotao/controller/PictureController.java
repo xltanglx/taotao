@@ -32,7 +32,7 @@ public class PictureController {
             url = IMAGE_SERVER_URL + url;
             result.put("error", 0);
             result.put("url", url);
-            return JSON.toJSONString(result);
+            return JSON.toJSONString(result);   // 使用fastjson将Map转为String，提高浏览器的兼容性
         } catch (Exception e) {
             e.printStackTrace();
             result.put("error", 0);

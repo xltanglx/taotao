@@ -137,7 +137,7 @@ html* .taborder .tyies-t {
 .taborder li b {
 	width: 9px;
 	height: 5px;
-	background: url(/images/order-icon-20140811.png) 0 -54px;
+	background: url(/WEB-INF/images/order-icon-20140811.png) 0 -54px;
 	position: absolute;
 	top: 50%;
 	right: 20px;
@@ -269,7 +269,7 @@ html* .taborder .tyies-t {
 	width: 16px;
 	height: 16px;
 	overflow: hidden;
-	background: url(/images/order-icon-20140811.png) 0 -64px;
+	background: url(/WEB-INF/images/order-icon-20140811.png) 0 -64px;
 	margin: -2px 2px 0 0
 }
 
@@ -311,7 +311,7 @@ td.td-02 {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	background: url(/images/order-icon-20140811.png);
+	background: url(/WEB-INF/images/order-icon-20140811.png);
 	width: 16px;
 	height: 16px;
 	line-height: 100px;
@@ -342,7 +342,7 @@ a.btn-im:hover, a.btn-imoff:hover {
 	*display: inline;
 	*zoom: 1;
 	margin: -1px 3px 0 0;
-	background: url(/images/order-icon-20140811.png) 0 -36px no-repeat;
+	background: url(/WEB-INF/images/order-icon-20140811.png) 0 -36px no-repeat;
 	height: 16px;
 	width: 16px;
 	font-size: 0;
@@ -394,7 +394,7 @@ a.btn-im:hover, a.btn-imoff:hover {
 }
 
 a.btn-again {
-	background: url(/images/btn-again.png);
+	background: url(/WEB-INF/images/btn-again.png);
 	display: block;
 	height: 21px;
 	line-height: 100px;
@@ -594,7 +594,7 @@ a.btn-again:hover {
 	left: 100px;
 	top: -47px;
 	background-image:
-		url(/images/layer-credit.png);
+		url(/WEB-INF/images/layer-credit.png);
 	width: 215px;
 	height: 105px;
 	z-index: 2;

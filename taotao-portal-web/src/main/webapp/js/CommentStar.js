@@ -3,7 +3,7 @@
  Author:hanyuxinting 
  Date: 2014-11-18 
  */
-define(["./Base", "./Util"], function(a) {
+define(["./base", "./Util"], function(a) {
     var b = new a;
     return b.include({star: 0,el: null,initStar: function(a, b) {
             this.el = $(".commstar a", a);

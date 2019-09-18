@@ -155,7 +155,7 @@ window.pageConfig = window.pageConfig || {}, pageConfig.wideVersion = function()
     var a, b = navigator.userAgent.toLowerCase(), c = document.referrer, d = /ipad/, e = /mobile|ios|iphone|android|windows phone|uc|mqqbrowser/, f = readCookie("goToMobile"), g = document.getElementById("shortcut-2013"), h = document.createElement("div");
     h.className = "w", h.innerHTML = '<div id="m-tips" style="white-space:nowrap;padding:4px 0;">\u60a8\u6b63\u5728\u7528\u624b\u673a\u8bbf\u95ee\u7535\u8111\u7248\u4eac\u4e1c\uff0c\u4e3a\u4e86\u4fdd\u8bc1\u6700\u4f73\u6d4f\u89c8\u6548\u679c\uff0c\u5efa\u8bae\u60a8\u8bbf\u95ee\u89e6\u5c4f\u7248\u3002<a href="#none" id="back-to-m" style="color:#005EA7;">[\u5207\u6362\u81f3\u89e6\u5c4f\u7248]</a></div>', /m\.jd\.com/.test(c) ? (createCookie("goToMobile", "2", 10, "/;domain=www.jd.com"), document.getElementById("m-tips") || (g.parentNode.insertBefore(h, g), a = document.getElementById("back-to-m"), a.onclick = function() {
         createCookie("goToMobile", "1", 10, "/;domain=www.jd.com"), location.href = "http://m.jd.com"
-    })) : f ? "1" === f && (location.href = "http://m.jd.com/") : e.test(b) && !d.test(b) ? (createCookie("goToMobile", "1", 10, "/;domain=www.jd.com"), location.href = "http://m.jd.com/") : createCookie("goToMobile", "0", 10, "/;domain=www.jd.com")
+    })) : f ? "1" === f && (location.href = "..") : e.test(b) && !d.test(b) ? (createCookie("goToMobile", "1", 10, "/;domain=www.jd.com"), location.href = "..") : createCookie("goToMobile", "0", 10, "/;domain=www.jd.com")
 };
 var CookieUtil = {};
 CookieUtil.setASCIICookie = function(a, b, c, d, e, f) {
