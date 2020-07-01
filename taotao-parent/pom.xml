@@ -38,7 +38,7 @@
         <activemq-core.version>5.7.0</activemq-core.version>
         <activemq-pool.version>5.15.4</activemq-pool.version>
         <freemarker.version>2.3.23</freemarker.version>
-        <quartz.version>2.2.2</quartz.version>
+        <quartz.version>2.3.2</quartz.version>
         <fastjson.version>1.2.25</fastjson.version>
     </properties>
 
